@@ -58,7 +58,6 @@ alertView.show()
 
 #### Add a button with colors
 ```
-
 alertView.addButton("Title",
 backgroundColor: UIColor(white: 0.1, alpha: 1.0),
 fontColor: UIColor.whiteColor(),
@@ -74,12 +73,10 @@ action: {
 
 print("Some Action")
 })
-
 ```
 
 #### Alignments
 ```
-
 // Message
 alertView.messageAlignment = NSTextAlignment.Left // NSTextAlignment is used here.
 
@@ -89,7 +86,6 @@ alertView.buttonAlignment  = UNButtonAlignment.Horizontal // UNButtonAlignment.V
 
 #### Change fonts
 ```
-
 // Title
 alertView.titleFont   = UIFont(name: "Avenir-Next-Bold", size: 16)
 

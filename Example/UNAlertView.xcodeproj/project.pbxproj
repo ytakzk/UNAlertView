@@ -85,7 +85,8 @@
 			children = (
 				529F947F1BF62C610031F8E0 /* UNAlertView.swift */,
 			);
-			path = Classes;
+			name = Classes;
+			path = ../Classes;
 			sourceTree = "<group>";
 		};
 		5F0407B66E04BDAE44251EA1 /* Pods */ = {

@@ -1,0 +1,14 @@
+PODS:
+  - UNAlertView (0.1.0)
+
+DEPENDENCIES:
+  - UNAlertView (from `../`)
+
+EXTERNAL SOURCES:
+  UNAlertView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  UNAlertView: 41f9fa784737f73fa67b5403b837378ad66ac22d
+
+COCOAPODS: 0.38.2

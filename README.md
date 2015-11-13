@@ -10,8 +10,8 @@ You can align the message and change the direction of buttons.
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ## Preview
-![Horizontal](https://raw.githubusercontent.com/wiki/ytakzk/UNAlertView/images/horizontal.png)
-![Vertical](https://raw.githubusercontent.com/wiki/ytakzk/UNAlertView/images/vertical.png)
+![Horizontal](https://raw.githubusercontent.com/wiki/ytakzk/UNAlertView/images/horizontal.png =250x)
+![Vertical](https://raw.githubusercontent.com/wiki/ytakzk/UNAlertView/images/vertical.png =250x)
 
 ## Installation
 

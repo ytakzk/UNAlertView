@@ -19,7 +19,7 @@ internal enum UNButtonAlignment {
     case Vertical
 }
 
-final class UNAlertView: UIView {
+final public class UNAlertView: UIView {
     
     private var titleLabel        = UILabel()
     private var messageLabel      = UILabel()
@@ -37,18 +37,18 @@ final class UNAlertView: UIView {
     var titleFont: UIFont?
     var messageFont: UIFont?
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         
         super.init(coder: aDecoder)
     }
     
     // Initialize with a message
-    convenience init(message: String) {
+    convenience public init(message: String) {
         self.init(title: "", message: message)
     }
     
     // Initialize with a title and a message
-    init(title: String, message: String) {
+    public init(title: String, message: String) {
         super.init(frame: CGRectZero)
         
         titleLabel.text       = title
@@ -67,7 +67,7 @@ final class UNAlertView: UIView {
     }
     
     // Add a button with a title and an action
-    func addButton(title:String, action:()->Void) {
+    public func addButton(title:String, action:()->Void) {
         
         let btn    = UNAlertButton(title: title)
         btn.action = action
@@ -76,7 +76,7 @@ final class UNAlertView: UIView {
     }
     
     // Add a button with a title, a background color, a font color and an action
-    func addButton(title:String, backgroundColor: UIColor, action:()->Void) {
+    public func addButton(title:String, backgroundColor: UIColor, action:()->Void) {
         
         let btn    = UNAlertButton(title: title, backgroundColor: backgroundColor, fontColor: nil)
         btn.action = action
@@ -85,7 +85,7 @@ final class UNAlertView: UIView {
     }
     
     // Add a button with a title, a background color, a font color and an action
-    func addButton(title:String, backgroundColor: UIColor, fontColor: UIColor, action:()->Void) {
+    public func addButton(title:String, backgroundColor: UIColor, fontColor: UIColor, action:()->Void) {
         
         let btn    = UNAlertButton(title: title, backgroundColor: backgroundColor, fontColor: fontColor)
         btn.action = action
@@ -94,7 +94,7 @@ final class UNAlertView: UIView {
     }
     
     // Show an alertview
-    func show() {
+    public func show() {
         
         // Draw all the subviews
         

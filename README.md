@@ -1,6 +1,6 @@
 ## UNAlertView
 
-UNAlertView is an UIAlertView replacement with **simple appearance**.  
+UNAlertView is a flexible UIAlertView replacement with **simple appearance**.  
 It enables you to **align the message** and **change directions of the buttons**.
 
 
@@ -107,5 +107,5 @@ ytakzk
 [http://ytakzk.me](http://ytakzk.me)
 
 ## License
-Hokusai is released under the MIT license.  
+UNAlertView is released under the MIT license.  
 See LICENSE for details.

@@ -10,8 +10,8 @@ It enables you to **align the message** and **change directions of the buttons**
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ## Preview
-<img src="https://raw.githubusercontent.com/wiki/ytakzk/UNAlertView/images/horizontal.png" width="340px">
-<img src="https://raw.githubusercontent.com/wiki/ytakzk/UNAlertView/images/vertical.png" width="340px">
+<img src="https://raw.githubusercontent.com/wiki/ytakzk/UNAlertView/images/horizontal.gif" width="340px">
+<img src="https://raw.githubusercontent.com/wiki/ytakzk/UNAlertView/images/vertical.gif" width="340px">  
 
 ## Features
 
@@ -109,3 +109,6 @@ ytakzk
 ## License
 UNAlertView is released under the MIT license.  
 See LICENSE for details.
+
+<img src="https://raw.githubusercontent.com/wiki/ytakzk/UNAlertView/images/horizontal.png" width="340px">
+<img src="https://raw.githubusercontent.com/wiki/ytakzk/UNAlertView/images/vertical.png" width="340px">

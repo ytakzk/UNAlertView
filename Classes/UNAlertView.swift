@@ -133,11 +133,11 @@ final public class UNAlertView: UIView {
         
         // Message
         messageLabel.numberOfLines = 0
+        messageLabel.font = (messageFont != nil) ? messageFont : UIFont.systemFontOfSize(16)
         let messageSize    = messageLabel.sizeThatFits(CGSize(width: kContainerWidth-44, height: 9999))
         messageLabel.frame = CGRect(x: 22, y: currentContentHeight + 10, width: kContainerWidth-44, height: messageSize.height)
         currentContentHeight = getBottomPos(messageLabel)
         messageLabel.textAlignment = messageAlignment
-        messageLabel.font = (messageFont != nil) ? messageFont : UIFont.systemFontOfSize(16)
         containerView.addSubview(messageLabel)
         
         

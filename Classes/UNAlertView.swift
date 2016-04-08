@@ -13,7 +13,7 @@ private let kButtonHeight: CGFloat   = 50.0
 private let kUNAlertViewTag          = 1928
 private let kCornerRadius: CGFloat   = 6.0
 private let kShadowOpacity: Float    = 0.15
-
+private var autoDismiss: Bool        = true
 internal enum UNButtonAlignment {
     case Horizontal
     case Vertical
@@ -190,6 +190,7 @@ final public class UNAlertView: UIView {
         
     }
     
+    
     // Dismiss the alertview from the keywindow
     private func dismiss() {
         
@@ -210,7 +211,16 @@ final public class UNAlertView: UIView {
     func buttonTapped(btn:UNAlertButton) {
         
         btn.action()
+        if (autoDismiss) {
+            dismiss()
+        }
+    }
+    
+    func dismissAlert() {
         dismiss()
+    }
+    func setAutoDismiss(autoStatus: Bool) {
+        autoDismiss = autoStatus
     }
     
     private func getBottomPos(view: UIView) -> CGFloat {

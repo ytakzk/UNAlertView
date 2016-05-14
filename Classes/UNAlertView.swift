@@ -14,7 +14,8 @@ private let kUNAlertViewTag          = 1928
 private let kCornerRadius: CGFloat   = 6.0
 private let kShadowOpacity: Float    = 0.15
 private var autoDismiss: Bool        = true
-internal enum UNButtonAlignment {
+
+public enum UNButtonAlignment {
     case Horizontal
     case Vertical
 }
@@ -71,7 +72,7 @@ final public class UNAlertView: UIView {
         
         let btn    = UNAlertButton(title: title)
         btn.action = action
-        btn.addTarget(self, action:Selector("buttonTapped:"), forControlEvents:.TouchUpInside)
+        btn.addTarget(self, action:#selector(UNAlertView.buttonTapped(_:)), forControlEvents:.TouchUpInside)
         buttons.append(btn)
     }
     
@@ -80,7 +81,7 @@ final public class UNAlertView: UIView {
         
         let btn    = UNAlertButton(title: title, backgroundColor: backgroundColor, fontColor: nil)
         btn.action = action
-        btn.addTarget(self, action:Selector("buttonTapped:"), forControlEvents:.TouchUpInside)
+        btn.addTarget(self, action:#selector(UNAlertView.buttonTapped(_:)), forControlEvents:.TouchUpInside)
         buttons.append(btn)
     }
     
@@ -89,7 +90,7 @@ final public class UNAlertView: UIView {
         
         let btn    = UNAlertButton(title: title, backgroundColor: backgroundColor, fontColor: fontColor)
         btn.action = action
-        btn.addTarget(self, action:Selector("buttonTapped:"), forControlEvents:.TouchUpInside)
+        btn.addTarget(self, action:#selector(UNAlertView.buttonTapped(_:)), forControlEvents:.TouchUpInside)
         buttons.append(btn)
     }
     
@@ -144,7 +145,7 @@ final public class UNAlertView: UIView {
         // Button
         let space:CGFloat = 1.0
         let width  = (kContainerWidth - space * CGFloat(buttons.count-1)) / CGFloat(buttons.count)
-        for var i = 0; i < buttons.count; i++ {
+        for i in 0 ..< buttons.count {
             
             let btn   = buttons[i]
             
@@ -264,9 +265,9 @@ internal final class UNAlertButton: UIButton {
 // Extension
 internal extension UIColor {
     
-    class func hex (var hexStr : NSString, alpha : CGFloat) -> UIColor {
+    class func hex (hexStr : NSString, alpha : CGFloat) -> UIColor {
         
-        hexStr = hexStr.stringByReplacingOccurrencesOfString("#", withString: "")
+        let hexStr  = hexStr.stringByReplacingOccurrencesOfString("#", withString: "")
         let scanner = NSScanner(string: hexStr as String)
         var color: UInt32 = 0
         if scanner.scanHexInt(&color) {

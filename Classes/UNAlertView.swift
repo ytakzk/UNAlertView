@@ -28,14 +28,14 @@ final public class UNAlertView: UIView {
     private var buttons           = [UNAlertButton]()
     
     // Message alignment
-    var messageAlignment      = NSTextAlignment.Center
+    public var messageAlignment   = NSTextAlignment.Center
     
     // Button alignment
-    var buttonAlignment       = UNButtonAlignment.Horizontal
+    public var buttonAlignment    = UNButtonAlignment.Horizontal
     
     // Fonts
-    var titleFont: UIFont?
-    var messageFont: UIFont?
+    public var titleFont: UIFont?
+    public var messageFont: UIFont?
 
     required public init?(coder aDecoder: NSCoder) {
         

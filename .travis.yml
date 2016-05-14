@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode7
+osx_image: xcode7.3
 script:
 - xctool -workspace Example/UNAlertView.xcworkspace -scheme UNAlertView-Example -sdk iphonesimulator -destination 'OS=9.3,name=iPhone 6S Plus' ONLY_ACTIVE_ARCH=NO
 
